@@ -1,0 +1,17 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    username: root
+    password: Jyy@123456
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.243.131:3306/dashuju?autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+  application:
+    name: student-service
+eureka:
+  instance:
+    prefer-ip-address: true #把自己的ip注册到注册中心中去
+  client:
+    service-url:
+      default-Zone: http://localhost:8761/eureka/
